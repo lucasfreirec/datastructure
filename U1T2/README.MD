@@ -39,6 +39,9 @@ The co-authorship network was created from the processed data, where each vertex
 
 Figure 2 shows the complete co-authorship network among authors. Each node represents an author, and each edge represents a collaboration on a paper.
 
+- Number of nodes in the graph: 10472
+- Number of links in the graph: 3789432
+
 ## Analyses Performed
 
 Several analyses were carried out on the created network:
@@ -71,15 +74,24 @@ Several analyses were carried out on the created network:
   <p><em>Figure 6: Subgraph with at least 724 neighbors</em></p>
 </div>
 
+- Number of nodes in the Figure 6: 5191
+- Number of links in the Figure 6: 3256018
+
 <div style="text-align: center;">
   <img src="./imgs/subgraph2.png" alt="Filter Image" />
   <p><em>Figure 7: Subgraph with at least 1500 neighbors</em></p>
 </div>
 
+- Number of nodes in the Figure 7: 1621
+- Number of links in the Figure 7: 1206448
+
 <div style="text-align: center;">
   <img src="./imgs/subgraph3.png" alt="Filter Image" />
   <p><em>Figure 8: Subgraph with at least 3000 neighbors</em></p>
 </div>
+
+- Number of nodes in the Figure 8: 9
+- Number of links in the Figure 8: 39
 
 - **Degree histogram**: A histogram was created to show the degree distribution of the vertices in the network, indicating how many co-authors each author has.
 
