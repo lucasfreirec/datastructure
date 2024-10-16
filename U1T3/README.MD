@@ -28,6 +28,11 @@ Question to be answered:
   <p><em>Figure 1: Graph of network 1</em></p>
 </div>
 
+<div style="text-align: center;">
+  <img src="./imgs/matrix_n1.png" alt="Filter Image" />
+  <p><em>Figure 2: Mixing matrix of network 1</em></p>
+</div>
+
 # Network #02
 
 ## Bipartite Graph of Medications and Active Ingredients
@@ -44,14 +49,15 @@ Question to be answered:
 
 **Answer: Based on the calculated degree assortativity within the bipartite graph, it can be stated that they do not. In fact, the opposite occurs: the more complex the medication, the less it tends to connect with other medications.**
 
-<div style="text-align: center;">
-  <img src="./imgs/matrix_n1.png" alt="Filter Image" />
-  <p><em>Figure 2: Mixing matrix of network 2</em></p>
-</div>
 
 <div style="text-align: center;">
   <img src="./imgs/graph_n2.png" alt="Filter Image" />
   <p><em>Figure 3: Graph of network 2</em></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="./imgs/plotn2.png" alt="Filter Image" />
+  <p><em>Figure 4: Plot of netkwork 2</em></p>
 </div>
 
 # Network #03
@@ -68,10 +74,6 @@ Question to be answered:
 
 **Answer: After calculating the assortativity based on the company and therapeutic class, it was possible to conclude that medications from the same company do NOT tend to share more active ingredients. However, medications from the same therapeutic class tend to share a relatively large number of active ingredients.**
 
-<div style="text-align: center;">
-  <img src="./imgs/plotn2.png" alt="Filter Image" />
-  <p><em>Figure 4: Plot of netkwork 2</em></p>
-</div>
 
 <div style="text-align: center;">
   <img src="./imgs/graph_n3.png" alt="Filter Image" />
