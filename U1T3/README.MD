@@ -20,7 +20,7 @@ Question to be answered:
 
 - Do medications in the same regulatory category tend to share active ingredients?
 
-Answer: Based on the assortativity calculation, it can be stated that they do not.
+**Answer: Based on the assortativity calculation, it can be stated that they do not.**
 
 
 <div style="text-align: center;">
@@ -42,7 +42,7 @@ Question to be answered:
 
 - Do active ingredients shared by complex medications tend to connect to medications with similar complexity profiles?
 
-Answer: Based on the calculated degree assortativity within the bipartite graph, it can be stated that they do not. In fact, the opposite occurs: the more complex the medication, the less it tends to connect with other medications.
+**Answer: Based on the calculated degree assortativity within the bipartite graph, it can be stated that they do not. In fact, the opposite occurs: the more complex the medication, the less it tends to connect with other medications.**
 
 <div style="text-align: center;">
   <img src="./imgs/matrix_n1.png" alt="Filter Image" />
@@ -66,7 +66,7 @@ Question to be answered:
 
 - Do medications from the same company or therapeutic class tend to share active ingredients?
 
-Answer: After calculating the assortativity based on the company and therapeutic class, it was possible to conclude that medications from the same company do NOT tend to share more active ingredients. However, medications from the same therapeutic class tend to share a relatively large number of active ingredients.
+**Answer: After calculating the assortativity based on the company and therapeutic class, it was possible to conclude that medications from the same company do NOT tend to share more active ingredients. However, medications from the same therapeutic class tend to share a relatively large number of active ingredients.**
 
 <div style="text-align: center;">
   <img src="./imgs/plotn2.png" alt="Filter Image" />
