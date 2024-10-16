@@ -28,7 +28,9 @@ Answer: Based on the assortativity calculation, it can be stated that they do no
   <p><em>Figure 1: Graph of network 1</em></p>
 </div>
 
-Bipartite Graph of Medications and Active Ingredients
+# Network #02
+
+## Bipartite Graph of Medications and Active Ingredients
 
 - Nodes (vertices): Medications and active ingredients are distinct nodes.
 
@@ -52,7 +54,9 @@ Answer: Based on the calculated degree assortativity within the bipartite graph,
   <p><em>Figure 3: Graph of network 2</em></p>
 </div>
 
-Co-occurrence by Company or Therapeutic Class
+# Network #03
+
+## Co-occurrence by Company or Therapeutic Class
 
 - Nodes: Each medication is represented by a node.
 - Edges: An edge exists between two medications if they share at least one active ingredient.
