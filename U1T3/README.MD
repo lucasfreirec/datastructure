@@ -22,7 +22,7 @@ Course: Computer Engineering
 </div>
 
 <div style="text-align: center;">
-  <img src="./imgs/plot_n2.png" alt="Filter Image" />
+  <img src="./imgs/plotn2.png" alt="Filter Image" />
   <p><em>Figure 4: Plot of netkwork 2</em></p>
 </div>
 
