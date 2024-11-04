@@ -1,102 +1,61 @@
 ![Correios](./imgs/correios.jpg)
 
-## Análise de Grafos com OSMnx e NetworkX
+# U1T4 - Package Delivery Logistics
 
-Neste notebook, uma série de análises foram realizadas em um grafo representando a rede viária de Natal, Rio Grande do Norte, Brasil. Abaixo estão as principais etapas e resultados obtidos:
+This project uses the OSMnx library to analyze the road network of Natal, Rio Grande do Norte, focusing on metrics that assist in package delivery logistics. The analysis was conducted in the context of Unit 1 (U1T4) work, exploring graph metrics that reveal essential information for planning and route efficiency. The questions addressed aim to optimize delivery operations, considering the structure of the city's road network.
 
-1. **Importação de Bibliotecas**:
-    - As bibliotecas `numpy`, `matplotlib.pyplot`, `networkx` e `osmnx` foram usadas para manipulação e visualização de grafos.
-    - Essas bibliotecas fornecem as ferramentas necessárias para criar, analisar e visualizar grafos.
+## Explanation Video
 
-2. **Criação do Grafo**:
-    - Um grafo foi criado a partir da rede viária de Natal usando a função `ox.graph_from_place`.
-    - O grafo representa a rede viária, com nós representando interseções e arestas representando as estradas que as conectam.
+[Explanation Video](https://link-para-o-video.com).
 
-3. **Visualização do Grafo**:
-    - O grafo foi plotado usando `ox.plot_graph`.
-    - Esta visualização ajuda a entender a estrutura e o layout da rede viária.
+## Overview
 
-4. **Informações Básicas do Grafo**:
-    - O número de nós e arestas no grafo foram calculados e exibidos.
-    - Isso fornece uma compreensão básica do tamanho e complexidade do grafo.
-    - Exemplo:
-      ```python
-      num_nodes = G.number_of_nodes()
-      num_edges = G.number_of_edges()
-      print(f"O número de nós em G é: {num_nodes}")
-      print(f"O número de arestas em G é: {num_edges}")
-      ```
+From the road network of the city of Natal, several graph analysis metrics were applied to answer critical questions in delivery logistics. The metrics addressed were:
 
-5. **Maior Componente Fortemente Conectada**:
-    - A maior componente fortemente conectada do grafo foi identificada.
-    - Esta componente representa o maior subconjunto do grafo onde cada nó é alcançável a partir de qualquer outro nó dentro do subconjunto.
-    - O comprimento médio do caminho mais curto dentro desta componente foi calculado, fornecendo insights sobre a eficiência de viagem dentro da parte mais conectada da rede.
-    - Exemplo:
-      ```python
-      strong_components = list(nx.strongly_connected_components(G))
-      largest_strong_component = max(strong_components, key=len)
-      G_largest = G.subgraph(largest_strong_component).copy()
-      avg_shortest_path_length = nx.average_shortest_path_length(G_largest, weight='length')
-      print(f"O Average Shortest Path Length de G é: {avg_shortest_path_length} metros")
-      ```
+- **Average Shortest Path Length**
+- **Diameter of Network**
+- **Shortest Path Length**
+- **Connected Components**
+- **Giant Connected Component**
+- **Clustering Coefficient**
 
-6. **Diâmetro do Grafo**:
-    - O diâmetro da maior componente fortemente conectada foi calculado.
-    - O diâmetro representa o caminho mais longo mais curto entre quaisquer dois nós na componente, indicando a distância máxima que alguém pode precisar percorrer dentro desta parte da rede.
-    - Exemplo:
-      ```python
-      diameter = nx.diameter(G_largest, weight='length')
-      print(f"O Diâmetro de G é: {diameter} metros")
-      ```
+In the generated graph, the nodes are the intersections between the streets and the edges are the streets. Thus, the graph used had 18,668 nodes and 48,524 edges.
 
-7. **Nó Mais Distante**:
-    - Um ponto de partida foi definido usando coordenadas específicas de latitude e longitude.
-    - O nó mais próximo deste ponto foi encontrado usando `ox.distance.nearest_nodes`.
-    - A distância para todos os outros nós a partir do nó inicial foi calculada, e o nó mais distante foi identificado.
-    - Esta análise ajuda a entender a acessibilidade e a extensão da rede a partir de um ponto específico.
-    - Exemplo:
-      ```python
-      latitude = -5.811551614738788
-      longitude = -35.21889920439562
-      start_node = ox.distance.nearest_nodes(G, X=longitude, Y=latitude)
-      lengths = nx.single_source_dijkstra_path_length(G, start_node, weight='length')
-      farthest_node = max(lengths, key=lengths.get)
-      max_distance = lengths[farthest_node]
-      print(f"O ponto mais distante é o nó {farthest_node} a {max_distance:.2f} metros.")
-      ```
+<div style="text-align: center;">
+  <img src="./imgs/plot1.png" alt="Filter Image" />
+  <p><em>Figure 1: Network of Natal</em></p>
+</div>
 
-8. **Caminho Mais Curto**:
-    - O caminho mais curto do nó inicial até o nó mais distante foi calculado usando `nx.shortest_path`.
-    - Este caminho foi então plotado no grafo, destacando a rota.
-    - Esta análise fornece uma representação visual da rota mais eficiente entre dois pontos distantes na rede.
-    - Exemplo:
-      ```python
-      shortest_path = nx.shortest_path(G, source=start_node, target=farthest_node, weight='length')
-      fig, ax = ox.plot_graph_route(G, shortest_path, route_linewidth=2, edge_linewidth=0.5, node_size=0, bgcolor='k')
-      ```
+## Main Questions and Answers
 
-9. **Componentes Conectados**:
-    - O número de componentes fracamente e fortemente conectados no grafo foi calculado.
-    - Componentes fracamente conectados são subconjuntos do grafo onde há um caminho entre quaisquer dois nós se a direção das arestas for ignorada.
-    - Componentes fortemente conectados são subconjuntos onde há um caminho entre quaisquer dois nós considerando a direção das arestas.
-    - Esta análise fornece insights sobre a conectividade geral e fragmentação da rede.
-    - Exemplo:
-      ```python
-      num_weakly_connected_components = nx.number_weakly_connected_components(G)
-      num_strongly_connected_components = nx.number_strongly_connected_components(G)
-      print(f"O grafo tem {num_weakly_connected_components} componentes fracamente conectados.")
-      print(f"O grafo tem {num_strongly_connected_components} componentes fortemente conectados.")
-      ```
+The questions below were formulated to explore how graph metrics help optimize package delivery logistics in Natal. Each metric answers specific questions that assist in logistical planning.
 
-10. **Coeficiente de Agrupamento**:
-     - O grafo foi convertido para um grafo simples (não direcionado e sem arestas paralelas) para esta análise.
-     - O coeficiente de agrupamento médio foi calculado, o que mede o grau em que os nós no grafo tendem a se agrupar.
-     - Esta métrica fornece insights sobre a conectividade local e a presença de grupos fortemente conectados dentro da rede.
-     - Exemplo:
-       ```python
-       G_simple = nx.Graph(G)
-       clustering_coefficient = nx.average_clustering(G_simple)
-       print(f"O coeficiente de clustering de G é: {clustering_coefficient}")
-       ```
+### 1. **How accessible are the different areas of the city?**
+   - **Metric Used**: Average Shortest Path Length
+   - **Explanation**: The average shortest path length indicates the average distance between two points in the road network. In a delivery context, this helps estimate the average distance a delivery person will travel to cover different areas. High values may indicate less accessible areas or fewer direct route options.
+   - **Result**: The average shortest path length for the road network of Natal is approximately 10,672 meters. This metric may be high due to distant regions of the city, such as the North Zone and Ponta Negra.
 
-Essas análises fornecem uma visão detalhada da estrutura e características da rede viária de Natal, oferecendo insights sobre sua conectividade, eficiência e organização geral.
+### 2. **What is the shortest path distance to the furthest delivery point from the Correios Package Delivery Center (CEE) in Natal?**
+   - **Metric Used**: Shortest Path Length
+   - **Explanation**: Using this metric helps answer what the longest distance a delivery person would have to travel to reach the furthest delivery point from the distribution center. This information is useful for predicting the maximum time and cost of a delivery within the covered area and also for planning resources, such as the number of vehicles or travel time.
+   - **Result**: The furthest delivery point from the Correios CEE is 16,931 meters away, indicating the longest distance to be traveled for a delivery, which is relevant for understanding the maximum reach of a direct route.
+
+<div style="text-align: center;">
+  <img src="./imgs/plot2.png" alt="Filter Image" />
+  <p><em>Figure 2: Shortest Path Length</em></p>
+</div>
+
+### 3. **What is the maximum distance between two points in the network?**
+   - **Metric Used**: Diameter of Network
+   - **Explanation**: The diameter represents the longest possible distance between two nodes in the network, which is essential for understanding the maximum extent of a delivery route. In this context, this metric helps plan routes for remote or less connected areas, where deliveries may take longer. It also helps identify regions or neighborhoods that are further away and contribute to logistics development.
+   - **Result**: The network diameter is 30,161 meters, representing the maximum distance between any two points in the city, which helps establish limits for the reach of the most distant deliveries.
+
+### 4. **Which areas of the city are resilient to road blockages?**
+   - **Metric Used**: Connected Components and Giant Connected Component
+   - **Explanation**: The number of connected components indicates how many sub-networks exist within the main network. The existence of a "Giant Connected Component" shows that a large part of the city is connected and, therefore, resilient to blockages in specific areas, offering several alternative routes.
+   - **Result**: The graph has 1 weakly connected component and 18 strongly connected components, with the Giant Connected Component containing 18,668 nodes and 28,140 edges. This indicates that most of the city is connected in such a way that local blockages would not affect overall access, increasing the resilience of the delivery network.
+
+### 5. **How connected are the city's intersections?**
+   - **Metric Used**: Clustering Coefficient
+   - **Explanation**: The clustering coefficient measures the degree of interconnection between neighboring nodes. In delivery logistics, a high clustering coefficient in certain areas indicates that there are many route options between nearby intersections, allowing greater flexibility and detour options, which is useful for avoiding congestion and optimizing routes.
+   - **Result**: The average clustering coefficient of the network is approximately 0.0307, a relatively low value, suggesting that while there are some interconnected areas, most of the city's intersections do not have a high density of direct connections. This reflects a more linear network structure, which limits detour options in certain regions.
