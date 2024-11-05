@@ -4,9 +4,11 @@
 
 This project uses the OSMnx library to analyze the road network of Natal, Rio Grande do Norte, focusing on metrics that assist in package delivery logistics. The analysis was conducted in the context of Unit 1 (U1T4) work, exploring graph metrics that reveal essential information for planning and route efficiency. The questions addressed aim to optimize delivery operations, considering the structure of the city's road network.
 
-## Explanation Video
+Student: Lucas Freire Costa
 
-[Explanation Video](https://link-para-o-video.com).
+Course: Computer Engineering
+
+[Video explaining the project](https://youtu.be/)
 
 ## Overview
 
