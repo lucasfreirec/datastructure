@@ -8,7 +8,7 @@ Student: Lucas Freire Costa
 
 Course: Computer Engineering
 
-[Video explaining the project](https://youtu.be/)
+[Video explaining the project](https://youtu.be/3DIgTMkJ54A)
 
 ## Notebook Structure and Description of Steps
 

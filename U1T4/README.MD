@@ -8,7 +8,7 @@ Student: Lucas Freire Costa
 
 Course: Computer Engineering
 
-[Video explaining the project](https://youtu.be/)
+[Video explaining the project](https://youtu.be/WepBMTJjWHU)
 
 ## Overview
 
