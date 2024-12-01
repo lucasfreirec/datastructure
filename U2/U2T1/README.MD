@@ -55,3 +55,15 @@ The node size is proportional to its degree, and the visualization layout used w
   <img src="./images/core.png" alt="Filter Image" />
   <p><em>Figure 5: Core </em></p>
 </div>
+
+## Part 3: Network production
+
+### Node Size and Community Division  
+
+For this visualization, the **node size** was determined by the **h-index** of each author, which measures both the productivity and the impact of their publications. Larger nodes represent authors with higher h-index values, indicating greater academic influence.  
+
+The network's **communities** were identified and divided using the **modularity optimization algorithm** proposed by Vincent D. Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre in their work *Fast unfolding of communities in large networks* (Journal of Statistical Mechanics: Theory and Experiment, 2008). This algorithm detects communities by maximizing the modularity metric, effectively grouping nodes that are more densely connected to each other than to the rest of the network.  
+
+This approach highlights clusters of authors who collaborate more frequently, revealing distinct research groups or collaborative networks within the co-authorship structure. Combining the h-index with community detection provides insights into individual influence and the overall collaborative dynamics of the network.
+
+[Link to the network](https://lucasfreirec.github.io/datastructure/U2/U2T1/network/)
