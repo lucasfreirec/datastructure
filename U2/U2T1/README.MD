@@ -11,16 +11,26 @@ Course: Computer Engineering
 [Video explaining the project](https://youtu.be/)
 
 <div style="text-align: center;">
-  <img src="./images/core.png" alt="Filter Image" />
-  <p><em>Figure X: Core </em></p>
-</div>
-
-<div style="text-align: center;">
   <img src="./images/degree_centrality.png" alt="Filter Image" />
-  <p><em>Figure X: Core </em></p>
+  <p><em>Figure X: Degree Centrality </em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="./images/degree_centrality2.png" alt="Filter Image" />
+  <img src="./images/closeness_centrality.png" alt="Filter Image" />
+  <p><em>Figure X: Closeness Centrality </em></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="./images/betweenness_centrality.png" alt="Filter Image" />
+  <p><em>Figure X: Betweenness Centrality </em></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="./images/eigenvector_centrality.png" alt="Filter Image" />
+  <p><em>Figure X: Eigenvector Centrality </em></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="./images/core.png" alt="Filter Image" />
   <p><em>Figure X: Core </em></p>
 </div>
