@@ -51,6 +51,8 @@ The node size is proportional to its degree, and the visualization layout used w
 
 ## Part 2: k-core and k-shell
 
+In this visualization, a new attribute was added to each node using the networkX library to denote their participation in the innermost core and respective shell. The node size is representative of the node's degree and authors with 100 or more connections have their name shown in the figure. The circular layout with concentric circles was adopted for its resemblance of common representation of Earth’s core with the core represented in red, its shell painted in purple and nodes not in these subgraphs being portraited in blue.
+
 <div style="text-align: center;">
   <img src="./images/core.png" alt="Filter Image" />
   <p><em>Figure 5: Core </em></p>
