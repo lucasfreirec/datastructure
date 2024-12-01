@@ -14,3 +14,13 @@ Course: Computer Engineering
   <img src="./images/core.png" alt="Filter Image" />
   <p><em>Figure X: Core </em></p>
 </div>
+
+<div style="text-align: center;">
+  <img src="./images/degree_centrality.png" alt="Filter Image" />
+  <p><em>Figure X: Core </em></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="./images/degree_centrality2.png" alt="Filter Image" />
+  <p><em>Figure X: Core </em></p>
+</div>
