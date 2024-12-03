@@ -8,7 +8,7 @@ Students: Lucas Freire Costa and Hipólito Filipe Costa De Araújo
 
 Course: Computer Engineering
 
-[Video explaining the project](https://youtu.be/)
+[Video explaining the project](https://youtu.be/NTlBo_1AWlI)
 
 ## Part 1: Centrality Metrics Visualization
 
