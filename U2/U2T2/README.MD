@@ -42,28 +42,28 @@ For each algorithm and input size, the following statistical analyses were perfo
 
 - **Average Execution Time**: Calculated by summing all execution times for a specific input size and dividing by the number of executions. This provides the mean performance metric for that size.
   
-  $$
-  \bar{t} = \frac{1}{n} \sum_{i=1}^{n} t_i
-  $$
-  
-  where \( t_i \) is the execution time of the \( i \)-th run, and \( n \) is the total number of executions.
+    $$
+    \bar{t} = \frac{1}{n} \sum_{i=1}^{n} t_i
+    $$
+    
+    where \( t_i \) is the execution time of the \( i \)-th run, and \( n \) is the total number of executions.
 
 - **Standard Deviation**: Measures the dispersion of the execution times around the mean, indicating the variability in performance.
   
-  $$
-  s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (t_i - \bar{t})^2}
-  $$
+    $$
+    s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (t_i - \bar{t})^2}
+    $$
 
 - **Confidence Intervals (95%)**: Estimated using the t-Student distribution due to the sample size and unknown population standard deviation. The confidence interval provides a range where the true mean execution time is likely to lie with 95% certainty.
   
-  $$
-  \text{CI} = \bar{t} \pm t_{\alpha/2, \, n - 1} \times \frac{s}{\sqrt{n}}
-  $$
-  
-  - \( \bar{t} \): Sample mean of execution times.
-  - \( s \): Sample standard deviation.
-  - \( n \): Number of executions.
-  - \( t_{\alpha/2, \, n - 1} \): t-score from the t-distribution table for a 95% confidence level and \( n - 1 \) degrees of freedom.
+    $$
+    \text{CI} = \bar{t} \pm t_{\alpha/2, \, n - 1} \times \frac{s}{\sqrt{n}}
+    $$
+    
+    - \( \bar{t} \): Sample mean of execution times.
+    - \( s \): Sample standard deviation.
+    - \( n \): Number of executions.
+    - \( t_{\alpha/2, \, n - 1} \): t-score from the t-distribution table for a 95% confidence level and \( n - 1 \) degrees of freedom.
 
 - **Interpretation**: The use of the t-Student distribution accounts for the variability in small sample sizes and provides a more accurate confidence interval than using a normal distribution. The calculated confidence intervals help in understanding the reliability of the average execution times and in comparing the performance of the two algorithms.
 
