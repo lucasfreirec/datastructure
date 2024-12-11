@@ -71,12 +71,12 @@ For each algorithm and input size, the following statistical analyses were perfo
 
 <div style="text-align: center;">
   <img src="./images/grafico1.png" alt="Algorithm Performance - Graph 1" />
-  <p><em>Figure 1: Algorithm Performance with Standard Style</em></p>
+  <p><em>Figure 1: Comparison of algorithm performances</em></p>
 </div>
 
 <div style="text-align: center;">
   <img src="./images/grafico2.png" alt="Algorithm Performance - Graph 2" />
-  <p><em>Figure 2: Algorithm Performance with Customized Style</em></p>
+  <p><em>Figure 2: Comparison of algorithm performance with the smaller y-axis scale</em></p>
 </div>
 
 ### 5. Conclusion
