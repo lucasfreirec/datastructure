@@ -48,14 +48,6 @@ This provides insights into the variability and reliability of the performance m
 
 ### 6. Visualization of Results
 
-Performance results are visualized using Matplotlib:
-
-- Execution times of both algorithms are plotted as a function of data sizes.
-- Error bars represent the confidence intervals.
-- Customizations include setting axis labels, titles, legends, and grids.
-
-Two versions of the graph are generated with different styles and saved as transparent PNG images.
-
 <div style="text-align: center;">
   <img src="./images/grafico1.png" alt="Algorithm Performance - Graph 1" />
   <p><em>Figure 1: Algorithm Performance with Standard Style</em></p>
