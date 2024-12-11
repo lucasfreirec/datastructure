@@ -12,11 +12,9 @@ Course: Computer Engineering
 
 ## Notebook Structure and Step-by-Step Description
 
-### 1. Environment Setup and Library Import
+### 1. Environment Setup and Definition of the Algorithms
 
 The notebook starts by importing the necessary libraries, such as NumPy, Matplotlib, and SciPy for statistical calculations and plotting graphs. The recursion limit is adjusted to accommodate large data structures.
-
-### 2. Definition of the Algorithms
 
 Two algorithms were defined:
 
@@ -25,7 +23,7 @@ Two algorithms were defined:
 
 These algorithms use helper functions to traverse the tree and compare values.
 
-### 3. Performance Test Configuration
+### 2. Performance Test Configuration and Execution
 
 Parameters were defined for the performance tests:
 
@@ -35,18 +33,40 @@ Parameters were defined for the performance tests:
 
 Random data arrays are generated, and the BST is populated accordingly.
 
-### 4. Execution and Timing of the Algorithms
-
 For each size in `vector_sizes`, both algorithms are executed multiple times. Execution times are recorded for statistical analysis.
 
-### 5. Statistical Analysis and Confidence Intervals
+### 3. Statistical Analysis and Confidence Intervals
 
-- Average execution times are calculated for each algorithm.
-- Standard deviations and confidence intervals (95%) are computed using the t-Student distribution.
+For each algorithm and input size, the following statistical analyses were performed:
 
-This provides insights into the variability and reliability of the performance measurements.
+- **Average Execution Time**: Calculated by summing all execution times for a specific input size and dividing by the number of executions. This provides the mean performance metric for that size.
+  
+  $$
+  \bar{t} = \frac{1}{n} \sum_{i=1}^{n} t_i
+  $$
+  
+  where \( t_i \) is the execution time of the \( i \)-th run, and \( n \) is the total number of executions.
 
-### 6. Visualization of Results
+- **Standard Deviation**: Measures the dispersion of the execution times around the mean, indicating the variability in performance.
+  
+  $$
+  s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (t_i - \bar{t})^2}
+  $$
+
+- **Confidence Intervals (95%)**: Estimated using the t-Student distribution due to the sample size and unknown population standard deviation. The confidence interval provides a range where the true mean execution time is likely to lie with 95% certainty.
+  
+  $$
+  \text{CI} = \bar{t} \pm t_{\alpha/2, \, n - 1} \times \frac{s}{\sqrt{n}}
+  $$
+
+  - $ \bar{t} $: Sample mean of execution times.
+  - $ s $: Sample standard deviation.
+  - $ n $: Number of executions.
+  - $ t_{\alpha/2, \, n - 1} $: t-score from the t-distribution table for a 95% confidence level and $ n - 1 $ degrees of freedom.
+
+- **Interpretation**: The use of the t-Student distribution accounts for the variability in small sample sizes and provides a more accurate confidence interval than using a normal distribution. The calculated confidence intervals help in understanding the reliability of the average execution times and in comparing the performance of the two algorithms.
+
+### 4. Visualization of Results
 
 <div style="text-align: center;">
   <img src="./images/grafico1.png" alt="Algorithm Performance - Graph 1" />
@@ -58,8 +78,14 @@ This provides insights into the variability and reliability of the performance m
   <p><em>Figure 2: Algorithm Performance with Customized Style</em></p>
 </div>
 
-### 7. Conclusion
+### 5. Conclusion
 
-The performance evaluation demonstrates how each algorithm scales with the increase in data size. The statistical analysis confirms the consistency of the execution times. The visualizations effectively compare the algorithms, highlighting their efficiency and possible points of attention.
+The performance evaluation of the algorithms `solver_closest` and `solver_kth_largest` confirmed the expected complexities for each. The `solver_closest` algorithm, which searches for the closest value in a BST, has logarithmic complexity O(log n), as it reduces the search space by half at each step following the tree structure. This is evidenced in the graphs ("grafico1.png" and "grafico2.png"), where the execution time increases slowly as the data size grows.
+
+In contrast, the `solver_kth_largest` algorithm, which finds the k-th largest value in the BST, has linear complexity O(n), since it needs to traverse all the nodes of the tree to collect and sort the elements. The graphs show a proportional increase in execution time with the increase in data size, confirming the expected linear behavior.
+
+The visual results of the graphs clearly reflect these differences in complexity. While the execution time of `solver_closest` exhibits a gentle growth, that of `solver_kth_largest` grows more sharply. The statistical analysis reinforces these observations, pointing to the consistency of the execution times with the theoretical complexities of the algorithms.
+
+**Additionally**, the total execution time of the notebook was approximately **70 minutes** (1 hour and 10 minutes). This extended duration was primarily due to the creation of the binary search trees with a large number of elements, which significantly increased the setup time compared to the execution of the algorithms themselves being evaluated.
 
 ---
