@@ -9,7 +9,11 @@ Student: Lucas Freire Costa
 
 Course: Computer Engineering
 
-[Video explaining the project](https://youtu.be/example_link)
+  <div align="center">
+    <a href="https://www.loom.com/share/7eae0240752747408767d189698db10e">
+      <img src="https://cdn.loom.com/sessions/thumbnails/7eae0240752747408767d189698db10e-7ed0b5f06fea8754-full-play.gif">
+    </a>
+</div>
 
 ## Notebook Structure and Step-by-Step Description
 
