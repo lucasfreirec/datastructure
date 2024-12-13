@@ -86,7 +86,4 @@ The performance evaluation of the algorithms `solver_closest` and `solver_kth_la
 In contrast, the `solver_kth_largest` algorithm, which finds the k-th largest value in the BST, has linear complexity O(n), since it needs to traverse all the nodes of the tree to collect and sort the elements. The graphs show a proportional increase in execution time with the increase in data size, confirming the expected linear behavior.
 
 The visual results of the graphs clearly reflect these differences in complexity. While the execution time of `solver_closest` exhibits a gentle growth, that of `solver_kth_largest` grows more sharply. The statistical analysis reinforces these observations, pointing to the consistency of the execution times with the theoretical complexities of the algorithms.
-
-**Additionally**, the total execution time of the notebook was approximately **70 minutes** (1 hour and 10 minutes). This extended duration was primarily due to the creation of the binary search trees with a large number of elements, which significantly increased the setup time compared to the execution of the algorithms themselves being evaluated.
-
 ---
