@@ -28,7 +28,7 @@ These algorithms use helper functions to traverse the tree and compare values.
 
 Parameters were defined for the performance tests:
 
-- `N = 1000000`: Maximum size of the data.
+- `N = 10000000`: Maximum size of the data.
 - `steps = 10`: Number of different sizes to be tested.
 - `executions_per_size = 10`: Number of executions for each size to obtain average times.
 
