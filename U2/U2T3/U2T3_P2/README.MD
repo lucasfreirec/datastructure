@@ -106,8 +106,8 @@ Finally, Kruskal's algorithm is applied to this complete graph to compute the Mi
 
 Based on the graph generated from the road network of the city of Natal, it was possible to calculate the **Minimum Spanning Tree (MST)** connecting the main selected tourist spots. The image illustrates the obtained results:
 
-1. The background graph represents the complete road network of the city, where each gray line indicates a road.
-2. The highlighted points on the graph represent the **Points of Interest (POIs)**, which were associated with the closest nodes in the road network:
+- The background graph represents the complete road network of the city, where each gray line indicates a road.
+- The highlighted points on the graph represent the **Points of Interest (POIs)**, which were associated with the closest nodes in the road network:
    - **Morro do Careca** (blue),
    - **Forte dos Reis Magos** (green),
    - **Praia dos Artistas** (purple),
@@ -117,9 +117,9 @@ Based on the graph generated from the road network of the city of Natal, it was 
    - **Parque da Cidade** (yellow),
    - **Farol de Mãe Luiza** (red).
 
-3. The routes highlighted in **red** represent the shortest paths between the tourist spots that are part of the MST. These paths were calculated using road length as the weight metric.
+- The routes highlighted in **red** represent the shortest paths between the tourist spots that are part of the MST. These paths were calculated using road length as the weight metric.
 
-4. Considering the tourist flow in the city, it is likely that the route begins in the **Ponta Negra** neighborhood, where the **Morro do Careca** is located. This neighborhood is traditionally where most tourists stay upon arriving in Natal, making it a strategic starting point for the routes.
+- Considering the tourist flow in the city, it is likely that the route begins in the **Ponta Negra** neighborhood, where the **Morro do Careca** is located. This neighborhood is traditionally where most tourists stay upon arriving in Natal, making it a strategic starting point for the routes.
 
 This analysis allows for an understanding of the connectivity between Natal's points of interest, optimizing routes for tourism or logistics. The total length of the minimum spanning tree was calculated to be **24047 meters**.
 
