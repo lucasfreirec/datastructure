@@ -12,8 +12,8 @@ Student: Lucas Freire Costa
 Course: Computer Engineering
 
 <div align="center">
-    <a href="">
-      <img src="">
+    <a href="https://www.loom.com/share/9a8cefd2ab5c4415ace6bfe1c9cead48">
+      <img src="https://cdn.loom.com/sessions/thumbnails/9a8cefd2ab5c4415ace6bfe1c9cead48-723bc0702e16f349-full-play.gif">
     </a>
 </div>
 
