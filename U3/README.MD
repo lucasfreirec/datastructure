@@ -11,9 +11,9 @@ Course: Computer Engineering
 
 [Medium article of the project](https://medium.com/@lucas.freire.705/from-victor-hugo-to-interactive-graphs-a-journey-with-nlp-and-network-tools-f13b992e7259)
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5pRAL1ZCJ72fywKyEc0uZi?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+[Podcast-English Version](https://open.spotify.com/episode/5kUkGX6cPjyg0kVzjhJb0D?si=dea1729c23b34ef6)
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5kUkGX6cPjyg0kVzjhJb0D?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+[Podcast-Portuguese Version](https://open.spotify.com/episode/5pRAL1ZCJ72fywKyEc0uZi?si=c8329908fcce49d9)
 
 Les Misérables, by Victor Hugo, is one of the greatest works of world literature, a timeless classic that combines remarkable individual narratives with a profound social analysis of 19th-century France. Published in 1862, the novel addresses universal themes such as justice, redemption, and the struggle for human dignity, introducing unforgettable characters like Jean Valjean and Cosette. With meticulous detail, Victor Hugo constructs a panorama that transcends its time, delivering social critiques that remain relevant to this day.
 
