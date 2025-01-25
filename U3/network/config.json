@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "https://i.postimg.cc/prmFDSY1/pngegg-2.png",
+    "link": "",
+    "text": "Lucas Freire Costa"
+  },
+  "text": {
+    "more": "This analysis of proper nouns in Les Misérables maps interactions between characters, places, and organizations, transforming the narrative into a network of connections. This approach identifies key relationships, highlights central elements, and explores the social and spatial structure of the work, revealing fundamental dynamics and interactions in the story.",
+    "intro": "This analysis of proper nouns in Les Misérables maps interactions between characters, places, and organizations, transforming the narrative into a network of connections. This approach identifies key relationships, highlights central elements, and explores the social and spatial structure of the work, revealing fundamental dynamics and interactions in the story.",
+    "title": "Analysis of the linguistic relations in Victor Hugo's Les Misérables"
+  },
+  "legend": {
+    "edgeLabel": "Relationship between entities",
+    "colorLabel": "Community",
+    "nodeLabel": "Proper Noun"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "Modularity Class",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": "Degree"
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
